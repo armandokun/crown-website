@@ -1,0 +1,463 @@
+/* Selects all elements */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  cursor: default;
+}
+
+a,
+address {
+  text-decoration: none;
+  color: lightgray;
+  transition: color 0.4s;
+  cursor: pointer;
+}
+
+a:hover {
+  color: white;
+}
+
+/* 1/3 of index.php */
+header {
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 2px 8px #000000;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+i#down {
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+#navlogo {
+  width: 150px;
+  height: auto;
+}
+
+/* The grid container creates the 5-column grid on header and main areas */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+      "header header header header header";
+  position: absolute;
+  align-items: center;
+  width: 100%;
+}
+
+.selected {
+  color: white;
+}
+
+/* 2/3 of index.php */
+.main {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../img/main.jpg") center;
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.items-in-main h3 {
+  margin-top: 150px;
+  margin-bottom: 0px;
+}
+
+.items-in-main #slogan {
+  margin-top: 5px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.items-in-main img {
+  margin-top: 50px;
+  width: 230px;
+  height: 50px;
+  transition: box-shadow 0.4s;
+}
+
+.items-in-main img:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-n-text p {
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+.button-n-text p:hover {
+  text-decoration: underline;
+}
+
+/* 3/3 of index.php */
+
+article {
+  display: grid;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../img/article.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+article h1 {
+  margin: 100px auto 0 auto;
+  font-size: 2em;
+}
+
+article h2 {
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+article p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+article #top-p {
+  margin: 5px auto 80px auto;
+  letter-spacing: 2px;
+}
+
+/* Starts 3-column grid on the rest of the page */
+.grid-wrapper {
+  display: grid;
+  grid-template-areas:
+      "left middle right"
+      "footer footer footer ";
+}
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  font-size: 14px;
+  margin: 0 60px 120px 60px;
+  font-weight: 200;
+  line-height: 1.4em;
+  color: lightgray;
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Footer */
+footer #footer-img {
+  width: 230px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style-type: none;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 14px;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 20px;
+}
+
+footer h1 {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: black;
+  padding: 10px;
+  justify-content: stretch;
+  text-align: center;
+}
+
+/* game.php */
+.game h1 {
+  color: white;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 80px;
+  padding-top: 150px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+/* user.php and user-register.php */
+form {
+  padding-top: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../img/register.jpg") center;
+  background-size: cover;
+  padding-bottom: 150px;
+}
+
+form img {
+  width: 70px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+form h1 {
+  font-family: "Roboto";
+  font-weight: 500;
+  margin: 10px auto;
+}
+
+form a {
+  color: #e9a208;
+}
+
+form a:hover {
+  color: #ffb005;
+}
+
+/* Background image on the login page */
+#login-form {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../img/login.jpg") center;
+}
+
+/* Starts one column grid for the registration and login pages */
+.container-user {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  width: 30%;
+  align-items: center;
+  margin: 0 auto;
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 0 50px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* login form p above the h1 */
+p#head {
+  margin: 0 auto 20px auto;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* login form p for terms&services */
+p#terms {
+  font-size: 11px;
+  color: grey;
+  margin-bottom: 10px;
+}
+
+/* login form p for signing up */
+p#acc {
+  border-top: 1px solid lightgrey;
+  font-size: 15px;
+  padding: 10px;
+  font-family: "Roboto", Arial, sans-serif;
+  margin-bottom: 5px;
+}
+
+/* input elements for registration and login */
+input[type="text"],
+input[type="password"] {
+  padding: 8px 14px;
+  display: inline-block;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  background: white;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 2px solid #e9a208;
+  outline: none;
+}
+
+/* submit button for the registration and login */
+button {
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 15px;
+  background: #e9a208;
+  border: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f7c04a;
+  transition: 0.4s background-color;
+}
+
+/* rankings.php */
+
+table {
+  width: 60%;
+  background: #f1f1f1;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+/* table header */
+th {
+  background: #e9a208;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: white;
+}
+
+/* table data cell  */
+td {
+  font-weight: 400;
+  font-size: 13px;
+  color: black;
+}
+
+th,
+td {
+  padding: 8px 0;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+/* selects even table rows */
+tr:nth-child(even) {
+  background-color: #d9d9d9;
+}
+
+.table {
+  padding: 150px 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../img/rankings.jpg") center;
+  background-size: cover;
+}
+
+.table h1 {
+  color: white;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+.table p {
+  margin-top: 5px;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+/* rounding corners of the table */
+#top-right {
+  border-top-right-radius: 10px;
+}
+
+#top-left {
+  border-top-left-radius: 10px;
+}
+
+/* terms.php */
+
+.terms {
+  color: white;
+  font-family: "Montserrat", Arial, sans-serif;
+  text-align: center;
+}
+
+.terms h1 {
+  padding-top: 100px;
+}
+
+.terms p {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 1.4em;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+/* starting canvas */
+
+canvas {
+  margin-top: 100px;
+  background-color: black;
+  border: 1px solid #e9a208;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#canvas {
+  display: grid;
+  justify-content: center;
+}
+
+#flexContainer {
+  display:flex;
+}
+
+#command {
+  width: 600px;
+  padding-right: 65px;
+  flex: 1;
+  margin: 0;
+  border-top-left-radius: 0px;
+}
+
+#commandEnter {
+  margin-left: -60px;
+  width: 60px;
+  height: 40px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+address {
+  padding-top: 10px;
+}
+
+div#instructions {
+  display: none;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', 'Arial';
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Game Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/report.css"
+    />
+  </head>
+  <body>
+    <div class="report-body">
+      <h1>Report for Coursework Submition 2</h1>
+      <p id="third-party">
+        <b>No 3<sup>rd</sup> party library used.</b>
+      </p>
+      <hr />
+      <h2>Game</h2>
+      <hr />
+      <h3>A basic game that the user can play and obtain a score.</h3>
+      <h4>
+        Video(s) showing the game in action, and the location of the code.
+      </h4>
+      <br />
+      <div class="frame">
+      <iframe
+        width="500"
+        height="300"
+        src="https://youtube.com/embed/2A1BBzc_sg4"
+      ></iframe>
+      </div>
+      <p>
+        The JavaScript code for the game can be found in the
+        <code>game.js</code> file which is in <b>js</b> folder and it is linked
+        to the <code>game.php</code> file.
+      </p>
+      <hr />
+      <h3>Advanced JavaScript such as objects and arrays.</h3>
+      <h4>Where are they in the code and why are they needed.</h4>
+      <br />
+      <h4>Arrays</h4>
+      <p>
+        The first array is called <code>myObstacles</code> in
+        <code> line 55</code> which is used to push objects to the array in
+        order to create endless obstacles coming towards the square. The second
+        array is in <code>line 58</code> which is located in
+        <code>game.js</code> file as both of them. The array holds 6 different
+        colors. They are handy in order to change the color of the obstacles,
+        button and borders once you pass every 1000 scores in the game.
+      </p>
+      <h4>Objects</h4>
+      <p>
+        First, I created variable for components in the game which is located in
+        <code>line 55</code>. Then I used the variable for the component
+        creation in <code>line 90 - 92</code>. I used an object to create canvas
+        and its parameters like context, width, height & other in
+        <code>line 98 - 114</code>. To track if the square hits the obstacle I
+        used function constructor in <code>line 143 - 163</code>. You can see in
+        the code in <code>line 198 - 201</code> I am using objects to push them
+        in to the <code>myObstacles</code> array.
+      </p>
+      <hr />
+      <h3>
+        Advanced game features, such as graphics, animation, multiple skill
+        levels.
+      </h3>
+      <h4>
+        Video(s) showing the advanced game feature in action, and the location
+        of the code.
+      </h4>
+      <br />
+      <div class="frame">
+      <iframe
+        width="500"
+        height="300"
+        src="https://youtube.com/embed/JAiTMuarXJk"
+      ></iframe>
+      </div>
+      <p>
+        The JavaScript code for the advanced game features can be found in the
+        <code>game.js</code>. Graphics. Elements for the game created
+        in <code>line 90 - 92</code>. Animation is in <code>line 168-218</code>.
+        The code inside clears and updates game for interval of miliseconds.
+        Changes difficulty for each 1000 points scored, the distance between the
+        obstacles is getting smaller. Function that creates obstacles in
+        particular time is in <code>line 220 - 225</code>.
+      </p>
+      <hr />
+      <h2>User account</h2>
+      <hr />
+      <h3>User registration with JavaScript validation and error message.</h3>
+      <h4>
+        Video showing the registration process and error message, and the
+        location of the code.
+      </h4>
+      <br />
+      <div class="frame">
+      <iframe
+        width="500"
+        height="300"
+        src="https://youtube.com/embed/TjjurZyy-tM"
+      ></iframe>
+      </div>
+      <p>
+        The JavaScript code for the registration can be found in the
+        <code>user.js</code> file which is in <b>js</b> folder and it is linked
+        to the <code>user.php</code> and <code>user-register.php</code> files.
+        The main functions for the registration validation are called
+        <code>store()</code> and <code>loopRegister()</code> which are based in
+        <code>lines 43 - 80</code>.
+      </p>
+      <hr />
+      <h3>User login with with JavaScript validation and error message.</h3>
+      <h4>
+        Video showing the login process and error message, and the location of
+        the code.
+      </h4>
+      <br />
+      <div class="frame">
+      <iframe
+        width="500"
+        height="300"
+        src="https://youtube.com/embed/G_h1VeJ0yTE"
+      ></iframe>
+      </div>
+      <p>
+        The JavaScript code for the login can be found in the
+        <code>user.js</code> file which is in <b>js</b> folder and it is linked
+        to the <code>user.php</code> and <code>user-register.php</code> files.
+        The main functions for the login validation are called
+        <code>login()</code> and <code>loopLogin()</code> which are based in
+        <code>lines 15 - 40</code>.
+      </p>
+      <hr />
+      <h3>
+        Store user data in local storage in JSON format (no mark for database
+        storage).
+      </h3>
+      <h4>The location of the JSON storage code.</h4>
+      <br />
+      <p>
+        The JavaScript code for the JSON storage can be found in the
+        <code>user.js</code> in <code>lines 2 - 12, 30, 67 - 72</code>.
+      </p>
+      <hr />
+      <h2>Ranking table</h2>
+      <hr />
+      <h3>
+        Storage of users scores in JSON format using HTML local storage (no mark
+        for database storage).
+      </h3>
+      <h4>The location of the JSON storage code.</h4>
+      <br />
+      <p>
+        The JavaScript code for the storage can be found in the
+        <code>leaderboard.js</code> file which is in <b>js</b> folder and it is
+        linked to the <code>rankings.php</code> file. The main functions for the
+        JSON storage are called <code>getUsers()</code> and in the
+        <code>game.js</code> there is a code which writes the score to the local
+        storage which is based in <code>lines 170 - 176</code> .
+      </p>
+      <hr />
+      <h3>Automatically updates as new user and score are added.</h3>
+      <h4>
+        Video showing the ranking table update, and the location of the code.
+      </h4>
+      <br />
+      <div class="frame">
+      <iframe
+        width="500"
+        height="300"
+        src="https://youtube.com/embed/mMiX7c228Y8"
+      ></iframe>
+      </div>
+      <p>
+        The JavaScript code for the updating new information can be found in the
+        <code>leaderboard.js</code>. Once account has between created ranking
+        table automatically creates new row in the table with the
+        <code>highScore</code> of 0. Table will display You for the username which is loged in.
+      </p>
+      <hr />
+      <h3>Sort by the score from high to low.</h3>
+      <h4>The location of the score sorting code.</h4>
+      <br />
+      <p>
+        The JavaScript code for the sorting scores can be found in the
+        <code>leaderboard.js</code>. Once the score is higher than
+        <code>highScore</code> of the user, it automatically updates to the new
+        one. For the sorting the scores, I used bubble sort algorithm because
+        for me it is less complex sorting method comparing to others. The code
+        of the bubble sort function can be found in
+        <code>leaderboard.js</code> on <code>lines 17 - 29</code>.
+      </p>
+    </div>
+    <hr />
+    <a href="report.html">Report of Submition 1</a>
+    </p>
+  </body>
+</html>

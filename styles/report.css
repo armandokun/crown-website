@@ -1,0 +1,58 @@
+/* report.html */
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.4em;
+}
+
+h1,
+h2,
+.website-pages,
+.report-body .third-party {
+  text-align: center;
+}
+.report-body {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.report-body img {
+  width: 80%;
+  padding: 0 50px;
+}
+
+.report-body ol {
+  font-size: 20px;
+}
+
+.report-body a {
+  text-decoration: none;
+  color: #e9a208;
+}
+
+.report-body ol p,
+.report-body ul.ul-small {
+  font-size: 15px;
+}
+
+.report-body a:hover {
+  text-decoration: underline;
+}
+
+.website-pages h3 {
+  margin: 50px auto 10px auto;
+}
+
+code {
+  font-size: inherit;
+  border: 1px solid #e7eaed;
+  background-color: #f3f4f4;
+  border-radius: 3px;
+  padding: 0;
+  padding: 2px 4px 0px 4px;
+
+}
+
+.frame {
+  text-align: center;
+}
