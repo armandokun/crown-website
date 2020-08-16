@@ -1,8 +1,6 @@
 # crown-website
 > This website was created due to a given assignment from the first year of the web development module at Middlesex University.
 
-[Crown Demo](http://app.armandokun.com) - Live Demo 
-
 ## Requirements
 
 The website should have at least 4 pages:
